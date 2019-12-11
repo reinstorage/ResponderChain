@@ -1,0 +1,2 @@
+# ResponderChain
+一种基于ResponsderChain的对象交互方式
