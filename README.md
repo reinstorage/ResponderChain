@@ -4,7 +4,7 @@
 ### 由来
 iOS的对象间传递方式有：直接property，delegate，KVO，block，protocol，多态，Target-Action。但有一天我翻阅技术文档时，发现了一种全新的交互方式，基于ResponsderChain实现对象间的交互。
 
-这种方式通过在UIResponder上挂一个category，使得事件和参数可以沿着responder chain逐步传递。相当于借用UIResponder chain实现一个自己的事件传递，这才事件需要层层传递的时候特别好用，但这种对象交互方式的有效场景仅限于在responder chain 上的UIResponder对象上。
+这种方式通过在UIResponder上挂一个category，使得事件和参数可以沿着responder chain逐步传递。相当于借用UIResponder chain实现一个自己的事件传递，这在事件需要层层传递的时候特别好用，但这种对象交互方式的有效场景仅限于在responder chain 上的UIResponder对象上。
 
 ### 实现
 
